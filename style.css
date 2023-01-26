@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color-orange: hsl(25, 97%, 53%);
+    --neutral-color-white: hsl(0, 0%, 100%);
+    --neutral-color-light-gray: hsl(217, 12%, 63%);
+    --neutral-color-medium-gray: hsl(216, 12%, 54%);
+    --neutral-color-dark-blue: hsl(213, 19%, 18%);
+    --neutral-color-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+}
+
+.background {
+    background-color: var(--neutral-color-very-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    background: linear-gradient(to left bottom, var(--neutral-color-dark-blue), hsl(213, 19%, 13%));
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding: 1.5rem;
+}
+
+h2 {
+    color: var(--neutral-color-white);
+    margin: 1rem 0 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+p {
+    color: var(--neutral-color-light-gray);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.points-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0 1.5rem;
+}
+
+label, .star {
+    color: var(--neutral-color-medium-gray);
+    background-color: var(--neutral-color-dark-blue);
+    border: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label:hover {
+    background-color: var(--primary-color-orange);
+    color: var(--neutral-color-white);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn {
+    color: var(--neutral-color-white);
+    background-color: var(--primary-color-orange);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.80rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 25px;
+    border: none;
+    letter-spacing: 0.1rem;
+}
+
+.submit-btn:hover {
+    color: var(--primary-color-orange);
+    background-color: var(--neutral-color-white);
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: var(--neutral-color-medium-gray);
+    color: var(--neutral-color-white);
+}
+
+.thanku{
+    text-align: center;
+}
+
+.rate{
+    background-color: var(--neutral-color-dark-blue);
+    width: fit-content;
+    margin: 1.5em auto;
+    padding: 0.5em 1.3em;
+    color: var(--primary-color-orange);
+    border-radius: 1em;
+}
+
+.device{
+    margin-top: 1em;
+}
+
+.d-none{
+    display: none;
+}

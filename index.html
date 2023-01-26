@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+  </style>
+</head>
+
+<body>
+
+  <main class="background">
+    <section class="card" role="rating-card">
+      <!-- Rating state start -->
+      <div class="stars">
+        <button class="star">
+          <img src="/images/icon-star.svg" alt="star">
+        </button>
+        <h2>How did we do?</h2>
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+        <div class="points-container">
+          <input type="radio" point="1" id="radio1" name="points">
+          <label for="radio1">1</label>
+          <input type="radio" point="2" id="radio2" name="points">
+          <label for="radio2">2</label>
+          <input type="radio" point="3" id="radio3" name="points">
+          <label for="radio3">3</label>
+          <input type="radio" point="4" id="radio4" name="points">
+          <label for="radio4">4</label>
+          <input type="radio" point="5" id="radio5" name="points">
+          <label for="radio5">5</label>
+        </div>
+        <button id="send" class="submit-btn orange-color">
+          Submit
+        </button>
+        <!-- Rating state end -->
+      </div>
+      <div class="thanku d-none">
+        <img class="device" src="images/illustration-thank-you.svg" alt="thank-you">
+        <p class="rate">You selected <span class="selected-rate"></span> out of 5</p>
+        <h2>Thank you!</h2>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!
+        </p>
+      </div>
+
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
