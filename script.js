@@ -4,7 +4,7 @@ const divThank = document.querySelector('.thanku')
 const selectedRate = document.querySelector('.selected-rate')
 
 btnSubmit.addEventListener('click', function (event) {
-    let checked = document.querySelector('input[name="points"]:checked')
+    const checked = document.querySelector('input[name="points"]:checked')
     if (checked) {
         divStars.classList.add('d-none')
         divThank.classList.remove('d-none')
